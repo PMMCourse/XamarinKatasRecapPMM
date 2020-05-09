@@ -148,12 +148,12 @@
     <Reference Include="Xamarin.iOS" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Xamarin.Forms" Version="3.4.0.1008975" />
+    <PackageReference Include="Xamarin.Forms" Version="4.6.0.726" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
     <ProjectReference Include="..\XamarinFormsKatas\XamarinFormsKatas.csproj">
-      <Project>{2190D5E0-C0FD-49A9-939D-F85B186EDD85}</Project>
+      <Project>{947E686F-5D7A-4B4C-BA69-8715AC80AB3E}</Project>
       <Name>XamarinFormsKatas</Name>
     </ProjectReference>
   </ItemGroup>

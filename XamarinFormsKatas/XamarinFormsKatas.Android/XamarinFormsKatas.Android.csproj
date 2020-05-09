@@ -15,7 +15,6 @@
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
     <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
     <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
-    <AndroidUseLatestPlatformSdk>false</AndroidUseLatestPlatformSdk>
     <TargetFrameworkVersion>v8.1</TargetFrameworkVersion>
     <AndroidHttpClientHandlerType>Xamarin.Android.Net.AndroidClientHandler</AndroidHttpClientHandlerType>
     <NuGetPackageImportStamp>
@@ -49,7 +48,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Xamarin.Forms" Version="3.4.0.1008975" />
+    <PackageReference Include="Xamarin.Forms" Version="4.6.0.726" />
     <PackageReference Include="Xamarin.Android.Support.Design" Version="27.0.2.1" />
     <PackageReference Include="Xamarin.Android.Support.v7.AppCompat" Version="27.0.2.1" />
     <PackageReference Include="Xamarin.Android.Support.v4" Version="27.0.2.1" />
@@ -93,7 +92,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\XamarinFormsKatas\XamarinFormsKatas.csproj">
-      <Project>{2190D5E0-C0FD-49A9-939D-F85B186EDD85}</Project>
+      <Project>{947E686F-5D7A-4B4C-BA69-8715AC80AB3E}</Project>
       <Name>XamarinFormsKatas</Name>
     </ProjectReference>
   </ItemGroup>
