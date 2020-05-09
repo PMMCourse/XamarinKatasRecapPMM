@@ -15,6 +15,16 @@ namespace XamarinFormsKatas.Katas_UI.Kata_d
 		public KataD ()
 		{
 			InitializeComponent ();
+
 		}
+        public void insertar()
+        {
+            List<Persona> Personas = new List<Persona>();
+            Persona p = new Persona("Juan", 25);
+            Persona p1 = new Persona("Marina", 18);
+            Personas.Add(p);
+            Personas.Add(p1);
+            ListaPersonas.ItemsSource = Personas;
+        }
 	}
 }
