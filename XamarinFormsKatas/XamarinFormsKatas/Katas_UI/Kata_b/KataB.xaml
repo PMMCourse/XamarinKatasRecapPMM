@@ -4,9 +4,7 @@
              x:Class="XamarinFormsKatas.Katas_UI.Kata_b.KataB">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Button BorderRadius="40" WidthRequest="80" HeightRequest="80" BackgroundColor="Blue"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
