@@ -4,6 +4,12 @@
              x:Class="XamarinFormsKatas.Katas_UI.Kata_d.KataD">
     <ContentPage.Content>
         <ListView x:Name="ListaPersonas" >
+            <ListView.Header>
+                <StackLayout Orientation="Horizontal">
+                    <Entry x:Name="EBuscador"/>
+                    <Button x:Name="BBuscador" Clicked="Buscador_Clicked"/>
+                </StackLayout>
+            </ListView.Header>
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>

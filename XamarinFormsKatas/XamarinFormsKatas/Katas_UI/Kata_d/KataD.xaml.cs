@@ -41,5 +41,12 @@ namespace XamarinFormsKatas.Katas_UI.Kata_d
                 }
             };
         }
+        public void Buscador_Clicked(object sender, EventArgs e)
+        {
+            if (EBuscador.Text != null)
+            {
+                ListaPersonas.ItemsSource = Persona.Where(x => x.Nombre == EBuscador.Text);
+            }
+        }
 	}
 }
