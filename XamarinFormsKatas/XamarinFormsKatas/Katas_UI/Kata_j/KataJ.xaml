@@ -4,9 +4,10 @@
              x:Class="XamarinFormsKatas.Katas_UI.Kata_j.KataJ">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Entry x:Name="EUsuario"/>
+            <Entry x:Name="EApellidos"/>
+            <button x:Name="BtnAceptar" Clicked="btn_Clicked"/>
+            <Label x:Name="LError"BackgroungColor="Red"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
