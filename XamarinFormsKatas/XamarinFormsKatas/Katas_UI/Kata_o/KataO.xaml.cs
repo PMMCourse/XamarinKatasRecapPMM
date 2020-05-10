@@ -15,6 +15,15 @@ namespace XamarinFormsKatas.Katas_UI.Kata_o
 		public KataO ()
 		{
 			InitializeComponent ();
+            this.Disappearing += desaparecer;
 		}
+        private void desaparecer(object sender, EventArgs e)
+        {
+            var decision = await DisplayAlert("¿Estas seguro de querer salir?", "¿deseas salir de esta app?", "si", "no");
+            if (decision == true)
+            {
+                Process.GetCurrentProcess().CloseMainWindow();
+            }
+        }
 	}
 }
