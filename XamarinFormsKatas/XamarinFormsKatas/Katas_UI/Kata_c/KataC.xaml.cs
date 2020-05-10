@@ -15,8 +15,8 @@ namespace XamarinFormsKatas.Katas_UI.Kata_c
 		public KataC ()
 		{
 			InitializeComponent ();
-			//this.Master = new Master();
-			//this.Detail = new NavigationPage(new Detail());
+			this.Master = new Master();
+			this.Detail = new NavigationPage(new Detail());
 
 			App.MasterDetail = this;
 		}
