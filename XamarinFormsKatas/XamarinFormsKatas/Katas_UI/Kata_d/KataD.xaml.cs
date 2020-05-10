@@ -12,19 +12,34 @@ namespace XamarinFormsKatas.Katas_UI.Kata_d
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class KataD : ContentPage
 	{
-		public KataD ()
+        List<Persona> Personas = new List<Persona>();
+
+        public KataD ()
 		{
 			InitializeComponent ();
+            insertar();
+
+            Seleccion();
 
 		}
         public void insertar()
         {
-            List<Persona> Personas = new List<Persona>();
-            Persona p = new Persona("Juan", 25);
-            Persona p1 = new Persona("Marina", 18);
+            Persona p = new Persona("Juan", 25, "imagenp.png");
+            Persona p1 = new Persona("Marina", 18, "imagen2.png");
             Personas.Add(p);
             Personas.Add(p1);
             ListaPersonas.ItemsSource = Personas;
+        }
+        public void Seleccion()
+        {
+            Personas.ItemSelected += (sender, e) =>
+            {
+                if(e.SelectedItem!= null)
+                {
+                    Navigation.PushAsync(new Katas_UI.Kata_e.KataE(e.SelectedItem as Persona));
+                    ((ListView)sender).SelectedItem = null;
+                }
+            };
         }
 	}
 }
