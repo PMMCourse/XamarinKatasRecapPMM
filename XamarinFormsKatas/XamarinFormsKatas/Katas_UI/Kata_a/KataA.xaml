@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinFormsKatas.Katas_UI.Kata_a.KataA">
+    <ScrollView>
+        <StackLayout>
+            <Button Text="Kata UI B" x:Name="btnB"/>
+            <Button Text="Kata UI C" x:Name="btnC"/>
+            <Button Text="Kata UI D" x:Name="btnD"/>
+            <Button Text="Kata UI E" x:Name="btnE"/>
+            <Button Text="Kata UI F" x:Name="btnF"/>
+            <Button Text="Kata UI G" x:Name="btnG"/>
+            <Button Text="Kata UI H" x:Name="btnH"/>
+            <Button Text="Kata UI I" x:Name="btnI"/>
+            <Button Text="Kata UI J" x:Name="btnJ"/>
+            <Button Text="Kata UI K" x:Name="btnK"/>
+            <Button Text="Kata UI L" x:Name="btnL"/>
+            <Button Text="Kata UI M" x:Name="btnM"/>
+            <Button Text="Kata UI N" x:Name="btnN"/>
+            <Button Text="Kata UI O" x:Name="btnO"/>
+            <Button Text="KAta UI P" x:Name="btnP"/>
+            <Button Text="Kata UI Q" x:Name="btnQ"/>
+            <Button Text="Kata UI R" x:Name="btnR"/>
+            <Button Text="Kata UI S" x:Name="btnS"/>
+            <Button Text="Kata UI T" x:Name="btnT"/>
+            <Button Text="Kata UI U" x:Name="btnU"/>
+            <Button Text="Kata UI V" x:Name="btnV"/>
+            <Button Text="Kata UI W" x:Name="btnW"/>
+            <Button Text="Kata UI X" x:Name="btnX"/>
+            <Button Text="Kata UI Y" x:Name="btnY"/>
+            <Button Text="Kata UI Z" x:Name="btnZ"/>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
