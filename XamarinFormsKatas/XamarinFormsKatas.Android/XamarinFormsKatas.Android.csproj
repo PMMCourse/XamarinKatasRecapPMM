@@ -30,6 +30,10 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <AndroidLinkMode>None</AndroidLinkMode>
+    <AotAssemblies>false</AotAssemblies>
+    <EnableLLVM>false</EnableLLVM>
+    <AndroidEnableProfiledAot>false</AndroidEnableProfiledAot>
+    <BundleAssemblies>false</BundleAssemblies>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -92,8 +96,13 @@
     <Folder Include="Resources\drawable\" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\XamarinFormsKatas.iOS\XamarinFormsKatas.iOS.csproj">
+      <Project>{db894529-d9cb-47c6-b483-423992513d81}</Project>
+      <Name>XamarinFormsKatas.iOS</Name>
+      <IsAppExtension>false</IsAppExtension>
+    </ProjectReference>
     <ProjectReference Include="..\XamarinFormsKatas\XamarinFormsKatas.csproj">
-      <Project>{2190D5E0-C0FD-49A9-939D-F85B186EDD85}</Project>
+      <Project>{947e686f-5d7a-4b4c-ba69-8715ac80ab3e}</Project>
       <Name>XamarinFormsKatas</Name>
     </ProjectReference>
   </ItemGroup>
