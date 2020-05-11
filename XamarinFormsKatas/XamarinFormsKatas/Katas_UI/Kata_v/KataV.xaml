@@ -3,6 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="XamarinFormsKatas.Katas_UI.Kata_v.KataV">
     <ContentPage.Content>
-        <StackLayout x:Name="mapaPrincipal"/>
+        <stackLayout Orientation="Vertical" VerticalOptions="Fill">
+            <Label x:Name="textoLargo"/>
+        </stackLayout>
     </ContentPage.Content>
 </ContentPage>
