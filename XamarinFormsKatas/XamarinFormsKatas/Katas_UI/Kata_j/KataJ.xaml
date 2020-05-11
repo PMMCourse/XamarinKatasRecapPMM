@@ -4,9 +4,9 @@
              x:Class="XamarinFormsKatas.Katas_UI.Kata_j.KataJ">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Entry x:Name="entryUser"/>
+            <Entry x:Name="entryPass"/>
+            <Button Text="Login" x:Name="btnLogin" Clicked="btnLogin_Clicked"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

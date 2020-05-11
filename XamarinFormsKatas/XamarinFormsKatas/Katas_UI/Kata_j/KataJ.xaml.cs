@@ -15,6 +15,15 @@ namespace XamarinFormsKatas.Katas_UI.Kata_j
 		public KataJ ()
 		{
 			InitializeComponent ();
+			
+		}
+
+		private void btnLogin_Clicked(object sender, EventArgs e)
+		{
+			if (entryUser.Text != null)
+			{
+				
+			}
 		}
 	}
 }
