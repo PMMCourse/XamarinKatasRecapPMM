@@ -14,7 +14,12 @@ namespace XamarinFormsKatas.Katas_UI.Kata_b
 	{
 		public KataB ()
 		{
-			InitializeComponent ();
+			InitializeComponent (); 
+			RoundedButton.Clicked += RoundedButton_Clicked;
+		}
+		private void RoundedButton_Clicked(object sender, EventArgs e)
+		{
+			((NavigationPage)this.Parent).PushAsync(new Kata_a.KataA());
 		}
 	}
 }
