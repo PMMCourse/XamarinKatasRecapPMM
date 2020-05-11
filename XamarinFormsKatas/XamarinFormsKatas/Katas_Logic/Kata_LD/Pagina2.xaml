@@ -1,11 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="XamarinFormsKatas.Katas_Logic.Kata_LD.KataLD">
+             x:Class="XamarinFormsKatas.Katas_Logic.Kata_LD.Pagina2">
     <ContentPage.Content>
         <StackLayout>
-            <Entry Text="{Binding texto}"/>
-            <Button Text="navegar" Command="{Binding CmdNavegacion}"/>
+            <Label Text="{Binding text}" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
