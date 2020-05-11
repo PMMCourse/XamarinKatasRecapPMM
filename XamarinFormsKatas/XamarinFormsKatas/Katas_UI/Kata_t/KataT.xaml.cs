@@ -22,7 +22,7 @@ namespace XamarinFormsKatas.Katas_UI.Kata_t
             lista.Add(dpt1.ToString());
             lista.Add(dpt2.ToString());
             lista.Add(dpt3.ToString());
-            listaPrincipal.ItemsSource = lista;
+            listaPrincipal.ItemsSource = lista.Where(x => x.edad > 18&&x.deporte.Contains("t")&&x.puntuacion>10);
 		}
 
 	}
