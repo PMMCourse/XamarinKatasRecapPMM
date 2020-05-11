@@ -4,9 +4,13 @@
              x:Class="XamarinFormsKatas.Katas_UI.Kata_d.KataD">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <ListView x:Name="listaNombre">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextCell  Text="{Binding Nombre}" Detail="{Binding Edad}"/>
+                    </DataTemplate> 
+                </ListView.ItemTemplate>
+            </ListView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

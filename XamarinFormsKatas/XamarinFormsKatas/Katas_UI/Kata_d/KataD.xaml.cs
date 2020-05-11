@@ -16,5 +16,21 @@ namespace XamarinFormsKatas.Katas_UI.Kata_d
 		{
 			InitializeComponent ();
 		}
+
+		protected override void OnAppearing()
+		{
+			base.OnAppearing();
+			ListaElementos elementos = new ListaElementos();
+			listaNombre.ItemsSource = elementos._persona;
+			listaNombre.ItemSelected += itemSelected;
+		}
+
+		private void itemSelected(object sender, SelectedItemChangedEventArgs e)
+		{
+			if (e.SelectedItem != null)
+			{
+				var per = e.SelectedItem as Persona;
+			}
+		}
 	}
 }
