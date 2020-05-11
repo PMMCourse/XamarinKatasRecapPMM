@@ -3,10 +3,22 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="XamarinFormsKatas.Katas_Logic.Kata_LE.KataLE">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        <StackLayout Margin="8,0,8,0">
+            <StackLayout Orientation="Horizontal">
+                <Entry Placeholder="Red" Text="{Binding rojo}"
+                   HorizontalOptions="FillAndExpand"
+                   TextChanged="ColorTextChanged"/>
+                <Entry Placeholder="Green" Text="{Binding verde}"
+                   HorizontalOptions="FillAndExpand"
+                   TextChanged="ColorTextChanged"/>
+                <Entry Placeholder="Blue" Text="{Binding azul}"
+                   HorizontalOptions="FillAndExpand"
+                   TextChanged="ColorTextChanged"/>
+            </StackLayout>
+            <BoxView WidthRequest="150" HeightRequest="150"
+                     BackgroundColor="{Binding ColorMexcla}"
+                     HorizontalOptions="Center"/>
         </StackLayout>
+
     </ContentPage.Content>
 </ContentPage>
