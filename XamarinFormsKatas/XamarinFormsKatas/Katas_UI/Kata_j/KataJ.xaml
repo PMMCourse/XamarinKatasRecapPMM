@@ -7,7 +7,7 @@
             <Entry x:Name="EUsuario"/>
             <Entry x:Name="EApellidos"/>
             <button x:Name="BtnAceptar" Clicked="btn_Clicked"/>
-            <Label x:Name="LError"BackgroungColor="Red"/>
+            <Label x:Name="LError" BackgroungColor="Red"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

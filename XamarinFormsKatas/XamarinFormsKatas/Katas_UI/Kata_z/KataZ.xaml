@@ -3,8 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="XamarinFormsKatas.Katas_UI.Kata_z.KataZ">
     <ContentPage.Content>
-        <StackLayoutx:Name="pag">
+        <StackLayout x:Name="pag">
            
-        </StackLayoutx:Name>
+        </StackLayout>
     </ContentPage.Content>
 </ContentPage>

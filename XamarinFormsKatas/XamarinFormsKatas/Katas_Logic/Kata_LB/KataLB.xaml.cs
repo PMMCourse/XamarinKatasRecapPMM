@@ -15,6 +15,27 @@ namespace XamarinFormsKatas.Katas_Logic.Kata_LB
 		public KataLB ()
 		{
 			InitializeComponent ();
+            LecturaJSON();
 		}
+        public async void LecturaJSON()
+        {
+            if (checking.Internet())
+            {
+                var cliente = new System.Net.Http.HttpClient();
+                var responsable = await cliente.GetAsync("https://jsonplaceholder.typicode.com/posts");
+                string usuarioJSON = await responsable.Content.ReadAsStringAsync();
+                List<User> lista = new List<User>();
+                if (string.IsNullOrEmpty(lista.ToString()))
+                {
+                    lista = JSonConvert.DeserializeObject<List<User>>(usuarioJSON);
+
+                }
+                list.ItemsSource = usuarioJSON;
+            }
+            else
+            {
+                await DisplayAlert("not Json", "el json es invalido", "ok");
+            }
+        }
 	}
 }
