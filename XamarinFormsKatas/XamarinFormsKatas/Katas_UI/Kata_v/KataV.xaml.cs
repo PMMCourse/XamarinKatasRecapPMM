@@ -14,7 +14,12 @@ namespace XamarinFormsKatas.Katas_UI.Kata_v
 	{
 		public KataV ()
 		{
-			InitializeComponent ();
-		}
+            InitializeComponent();
+            string textoLabel = "textolargotextolargotextolargotextolargotextolargotextolargotextolargotextolargotextolargotextolargotextolargotextolargotextolargotextolargotextolargotextolargotextolargotextolargotextolargotextolargotextolargotextolargotextolargotextolargo" +
+                "textolargotextolargotextolargotextolargotextolargotextolargotextolargotextolargotextolargotextolargotextolargotextolargotextolargotextolargotextolargotextolargo" +
+                "textolargotextolargotextolargotextolargotextolargotextolargotextolargotextolargotextolargotextolargotextolargotextolargotextolargotextolargotextolargotextolargotextolargotextolargo" +
+                "textolargotextolargotextolargotextolargotextolargotextolargotextolargotextolargotextolargotextolargotextolargotextolargotextolargotextolargotextolargotextolargotextolargotextolargotextolargotextolargo";
+            textoLargo.Text = textoLabel;
+        }
 	}
 }

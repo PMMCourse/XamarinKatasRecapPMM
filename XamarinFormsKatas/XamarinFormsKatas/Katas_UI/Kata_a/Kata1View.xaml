@@ -2,4 +2,46 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="XamarinFormsKatas.Katas.Kata1.Kata1View">
+
+<ScrollView>
+    <StackLayout>
+        <Button Text="Ejer B" x:Name="btnB"/>
+        <Button Text="Ejer C" x:Name="btnC"/>
+        <Button Text="Ejer D" x:Name="btnD"/>
+        <Button Text="Ejer E" x:Name="btnE"/>
+        <Button Text="Ejer F" x:Name="btnF"/>
+        <Button Text="Ejer G" x:Name="btnG"/>
+        <Button Text="Ejer H" x:Name="btnH"/>
+        <Button Text="Ejer I" x:Name="btnI"/>
+        <Button Text="Ejer J" x:Name="btnJ"/>
+        <Button Text="Ejer K" x:Name="btnK"/>
+        <Button Text="Ejer L" x:Name="btnL"/>
+        <Button Text="Ejer M" x:Name="btnM"/>
+        <Button Text="Ejer N" x:Name="btnN"/>
+        <Button Text="Ejer O" x:Name="btnO"/>
+        <Button Text="Ejer P" x:Name="btnP"/>
+        <Button Text="Ejer Q" x:Name="btnQ"/>
+        <Button Text="Ejer R" x:Name="btnR"/>
+        <Button Text="Ejer S" x:Name="btnS"/>
+        <Button Text="Ejer T" x:Name="btnT"/>
+        <Button Text="Ejer U" x:Name="btnU"/>
+        <Button Text="Ejer V" x:Name="btnV"/>
+        <Button Text="Ejer W" x:Name="btnW"/>
+        <Button Text="Ejer X" x:Name="btnX"/>
+        <Button Text="Ejer Y" x:Name="btnY"/>
+        <Button Text="Ejer Z" x:Name="btnZ"/>
+        <Button Text="Ejer LA" x:Name="btnLA"/>
+        <Button Text="Ejer LB" x:Name="btnLB"/>
+        <Button Text="Ejer LC" x:Name="btnLC"/>
+        <Button Text="Ejer LD" x:Name="btnLD"/>
+        <Button Text="Ejer LE" x:Name="btnLE"/>
+        <Button Text="Ejer LF" x:Name="btnLF"/>
+        <Button Text="Ejer LG" x:Name="btnLG"/>
+        <Button Text="Ejer LH" x:Name="btnLH"/>
+        <Button Text="Ejer LI" x:Name="btnLI"/>
+        <Button Text="Ejer LJ" x:Name="btnLJ"/>
+        <Button Text="Ejer LK" x:Name="btnLK"/>
+    </StackLayout>
+</ScrollView>    
+    
 </ContentPage>

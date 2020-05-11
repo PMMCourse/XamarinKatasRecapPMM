@@ -3,10 +3,25 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="XamarinFormsKatas.Katas_UI.Kata_d.KataD">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <ListView x:Name="ListaPersonas" >
+            <ListView.Header>
+                <StackLayout Orientation="Horizontal">
+                    <Entry x:Name="EBuscador"/>
+                    <Button x:Name="BBuscador" Clicked="Buscador_Clicked"/>
+                </StackLayout>
+            </ListView.Header>
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Orientation="Horizontal">
+                            <Label Text="Nombre de la persona: " VerticalOptions="Center"/>
+                            <Label Text="{Binding nombre}" VerticalOptions="Center"/>
+                            <Label Text="Edad de la persona: " VerticalOptions="Center"/>
+                            <Label Text="{Binding edad}" VerticalOptions="Center"/>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
     </ContentPage.Content>
 </ContentPage>

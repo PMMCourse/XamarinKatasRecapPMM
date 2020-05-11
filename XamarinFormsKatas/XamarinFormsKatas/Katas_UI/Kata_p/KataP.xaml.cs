@@ -16,5 +16,14 @@ namespace XamarinFormsKatas.Katas_UI.Kata_p
 		{
 			InitializeComponent ();
 		}
-	}
+        private void btn_Clicked(object sender, EventArgs e)
+        {
+            textoCargado.IsRunning = true;
+            this.IsEnabled = false;
+            Task.Delay(5000);
+            textoCargado.IsRunning = false;
+            this.IsEnabled = true;
+        }
+
+    }
 }
