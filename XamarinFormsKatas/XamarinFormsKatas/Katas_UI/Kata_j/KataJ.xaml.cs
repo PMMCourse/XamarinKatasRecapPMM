@@ -15,18 +15,8 @@ namespace XamarinFormsKatas.Katas_UI.Kata_j
 		public KataJ ()
 		{
 			InitializeComponent ();
+            BindingContext = new LoginViewModel();
 		}
-        public void btn_Clicked(object sender, EventArgs e)
-        {
-            if (!(string.IsNullOrEmpty(EUsuario.Txt)))
-            {
-                DisplayAlert("Login", "se logueo", "ok");
-                LError.IsVisible = false;
-            }
-            else
-            {
-                LError.IsVisible = true;
-            }
-        }
+        
 	}
 }
