@@ -30,7 +30,6 @@ namespace XamarinFormsKatas.Katas_UI.Kata_l
 		private void TapGestureRecognizer_Tapped(object sender, EventArgs e)
 		{
 			lbSwipe.Text = "Tapped";
-
 		}
 
 		private void TapGestureRecognizer_Tapped_1(object sender, EventArgs e)
