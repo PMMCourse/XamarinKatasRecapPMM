@@ -2,4 +2,57 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="XamarinFormsKatas.Katas.Kata1.Kata1View">
+
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Label Text=" " HorizontalOptions="Center"></Label>
+
+                <Label Text="KATAS UI"></Label>
+
+                <Label Text=" "></Label>
+                <Button Text="B" x:Name="B"></Button>
+                <Button Text="C" x:Name="C"></Button>
+                <Button Text="D" x:Name="D"></Button>
+                <Button Text="E" x:Name="E"></Button>
+                <Button Text="F" x:Name="F"></Button>
+                <Button Text="G" x:Name="G"></Button>
+                <Button Text="H" x:Name="H"></Button>
+                <Button Text="I" x:Name="I"></Button>
+                <Button Text="J" x:Name="J"></Button>
+                <Button Text="K" x:Name="K"></Button>
+                <Button Text="L" x:Name="L"></Button>
+                <Button Text="M" x:Name="M"></Button>
+                <Button Text="N" x:Name="N"></Button>
+                <Button Text="O" x:Name="O"></Button>
+                <Button Text="P" x:Name="P"></Button>
+                <Button Text="Q" x:Name="Q"></Button>
+                <Button Text="R" x:Name="R"></Button>
+                <Button Text="S" x:Name="S"></Button>
+                <Button Text="T" x:Name="T"></Button>
+                <Button Text="U" x:Name="U"></Button>
+                <Button Text="V" x:Name="V"></Button>
+                <Button Text="W" x:Name="W"></Button>
+                <Button Text="X" x:Name="X"></Button>
+                <Button Text="Y" x:Name="Y"></Button>
+                <Button Text="Z" x:Name="Z"></Button>
+                <Label Text=" "></Label>
+
+                <Label Text="KATAS LOGIC" HorizontalOptions="Center"></Label>
+
+                <Label Text=" "></Label>
+
+                <Button Text="LB" x:Name="LB"></Button>
+                <Button Text="LC" x:Name="LC"></Button>
+                <Button Text="LD" x:Name="LD"></Button>
+                <Button Text="LE" x:Name="LE"></Button>
+                <Button Text="LF" x:Name="LF"></Button>
+                <Button Text="LG" x:Name="LG"></Button>
+                <Button Text="LH" x:Name="LH"></Button>
+                <Button Text="LI" x:Name="LI"></Button>
+                <Button Text="LJ" x:Name="LJ"></Button>
+                <Button Text="LK" x:Name="LK"></Button>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
 </ContentPage>

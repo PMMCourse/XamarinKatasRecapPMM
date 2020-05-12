@@ -12,9 +12,21 @@ namespace XamarinFormsKatas.Katas_UI.Kata_x
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class KataX : ContentPage
 	{
-		public KataX ()
+		List<string> nameList = new List<string>();
+		public KataX()
 		{
-			InitializeComponent ();
+			InitializeComponent();
+			nameList.Add("DOG");
+			nameList.Add("CAT");
+			nameList.Add("MOUSE");
+			nameList.Add("SNAKE");
+			Entry1.Focused += ShowPicker;
+		}
+
+		private void ShowPicker(Object sender, EventArgs e)
+		{
+			Picker1.ItemsSource = nameList;
+			Picker1.IsVisible = true;
 		}
 	}
 }

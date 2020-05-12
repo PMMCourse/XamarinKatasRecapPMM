@@ -12,9 +12,17 @@ namespace XamarinFormsKatas.Katas_UI.Kata_t
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class KataT : ContentPage
 	{
-		public KataT ()
+		public List<Athlete> List = new List<Athlete>();
+		public KataT()
 		{
-			InitializeComponent ();
+			InitializeComponent();
+			Athlete player1 = new Athlete(9, 35, "CR7", "Fútbol");
+			Athlete player2 = new Athlete(7, 38, "Joaquin", "Fútbol");
+			Athlete player3 = new Athlete(10, 33, "Messi", "Fútbol");
+			List.Add(player1);
+			List.Add(player2);
+			List.Add(player3);
+			athleteList.ItemsSource = List;
 		}
 	}
 }

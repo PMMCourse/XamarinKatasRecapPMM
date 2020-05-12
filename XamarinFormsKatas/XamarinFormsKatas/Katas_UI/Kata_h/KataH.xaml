@@ -4,9 +4,15 @@
              x:Class="XamarinFormsKatas.Katas_UI.Kata_h.KataH">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+
+            <Button x:Name="RotateButtonAndMove" 
+                    WidthRequest      ="100"
+                    HeightRequest     ="100"
+                    CornerRadius      ="50"
+                    VerticalOptions   ="Center"
+                    HorizontalOptions ="Center"
+                    Text="Click to rotate and move button"/>
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -3,10 +3,11 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="XamarinFormsKatas.Katas_UI.Kata_i.KataI">
     <ContentPage.Content>
+
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Entry x:Name="text1" TextChanged="textPlaceholder"/>
+            <Entry x:Name="text2" Placeholder="{Binding text1}"/>
         </StackLayout>
+
     </ContentPage.Content>
 </ContentPage>

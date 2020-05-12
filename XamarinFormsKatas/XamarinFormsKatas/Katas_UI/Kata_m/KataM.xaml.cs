@@ -12,9 +12,18 @@ namespace XamarinFormsKatas.Katas_UI.Kata_m
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class KataM : ContentPage
 	{
-		public KataM ()
-		{
-			InitializeComponent ();
-		}
-	}
+        public KataM()
+        {
+            InitializeComponent();
+
+
+            buttonAdd.Clicked += (sender, e) => {
+                var label = new Label()
+                {
+                    Text = "New label",
+                };
+                StackLabel.Children.Add(label);
+            };
+        }
+    }
 }

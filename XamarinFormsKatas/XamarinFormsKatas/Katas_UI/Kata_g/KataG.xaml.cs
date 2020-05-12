@@ -12,9 +12,16 @@ namespace XamarinFormsKatas.Katas_UI.Kata_g
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class KataG : ContentPage
 	{
-		public KataG ()
+		public KataG()
 		{
-			InitializeComponent ();
+			InitializeComponent();
+
+			RotateButton.Clicked += async (sender, e) =>
+			{
+				await RotateButton.RotateTo(360, 500);
+				RotateButton.Rotation = 0;
+			};
+
 		}
 	}
 }

@@ -3,10 +3,10 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="XamarinFormsKatas.Katas_UI.Kata_k.KataK">
     <ContentPage.Content>
+
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <ListView x:Name="List" IsPullToRefreshEnabled="True"></ListView>
         </StackLayout>
+
     </ContentPage.Content>
 </ContentPage>

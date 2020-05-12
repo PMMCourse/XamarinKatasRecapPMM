@@ -12,9 +12,18 @@ namespace XamarinFormsKatas.Katas_UI.Kata_o
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class KataO : ContentPage
 	{
-		public KataO ()
-		{
-			InitializeComponent ();
-		}
-	}
+        public KataO()
+        {
+            InitializeComponent();
+        }
+        protected override bool OnBackButtonPressed()
+        {
+            Device.BeginInvokeOnMainThread(async () =>
+            {
+                var resultado = await this.DisplayAlert("WARNING", "DO TOU WANT TO LEAVE?", "YES", "NO");
+                if (resultado) await this.Navigation.PopAsync();
+            });
+            return true;
+        }
+    }
 }
