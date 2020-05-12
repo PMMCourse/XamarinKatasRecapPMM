@@ -4,9 +4,13 @@
              x:Class="XamarinFormsKatas.Katas_UI.Kata_l.KataL">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <StackLayout.GestureRecognizers>
+                <SwipeGestureRecognizer Direction="Left" Swiped="SwipeGestureRecognizer_Swiped"/>
+                <SwipeGestureRecognizer Direction="Right" Swiped="SwipeGestureRecognizer_Swiped_1"/>
+                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_1"/>
+                <PinchGestureRecognizer PinchUpdated="PinchGestureRecognizer_PinchUpdated_1"/>
+            </StackLayout.GestureRecognizers>
+            <Label Text="" x:Name="lbSwipe" VerticalOptions="Center" HorizontalOptions="Center"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
