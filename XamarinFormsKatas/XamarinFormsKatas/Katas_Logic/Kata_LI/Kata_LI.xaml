@@ -4,9 +4,10 @@
              x:Class="XamarinFormsKatas.Katas_Logic.Kata_LI.Kata_LI">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Entry x:Name="numeroTelefono">
+                
+            </Entry>
+            <Button Text="LLamar" x:Name="llamada" Clicked="{Binding RealizarLLamada}"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

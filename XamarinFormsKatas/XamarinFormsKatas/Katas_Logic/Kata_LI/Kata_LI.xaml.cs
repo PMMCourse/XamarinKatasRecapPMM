@@ -15,6 +15,12 @@ namespace XamarinFormsKatas.Katas_Logic.Kata_LI
 		public Kata_LI ()
 		{
 			InitializeComponent ();
+           
 		}
-	}
+        private void RealizarLLamada(object sender, EventArgs e)
+        {
+            DependencyService.Get<ITelefono>().RealizarLLamada(numeroTelefono.Text.ToString());
+        }
+
+    }
 }
