@@ -12,11 +12,11 @@ namespace XamarinFormsKatas.Katas_UI.Kata_z
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class KataZ : ContentPage
     {
-        List<string> listaPersonas = new List<string>();
+       
         public KataZ()
         {
             InitializeComponent();
-
+            BindingContext = new MainViewModel();
             listaPersonas.Add("Martin");
             listaPersonas.Add("Antonio");
             listaPersonas.Add("Luisa");
