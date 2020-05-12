@@ -12,13 +12,10 @@ namespace XamarinFormsKatas.Katas_UI.Kata_w
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class controlElementos : ContentPage
     {
-        public controlElementos(Entry EControl, Label LControl, Button BControl, ActivityIndicator AControl)
+        public controlElementos()
         {
             InitializeComponent();
-            pagina.Children.Add(EControl);
-            pagina.Children.Add(LControl);
-            pagina.Children.Add(BControl);
-            pagina.Children.Add(AControl);
+            BindingContext = ControlViewModel(EControl,LControl,BControl,AControl);
         }
     }
 }
