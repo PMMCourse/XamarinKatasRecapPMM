@@ -148,4 +148,9 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Katas_Logic\Kata_LF\ViewModel\" />
+    <Folder Include="Katas_Logic\Kata_LF\View\" />
+  </ItemGroup>
 </Project>
