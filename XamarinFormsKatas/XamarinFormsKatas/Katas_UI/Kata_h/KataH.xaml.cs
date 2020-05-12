@@ -12,9 +12,22 @@ namespace XamarinFormsKatas.Katas_UI.Kata_h
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class KataH : ContentPage
 	{
-		public KataH ()
+		public KataH()
 		{
-			InitializeComponent ();
+			InitializeComponent();
+
+			RotateButtonAndMove.Clicked += async (sender, e) =>
+			{
+
+				await RotateButtonAndMove.TranslateTo(0, 100, 100);
+				await RotateButtonAndMove.RotateTo(360, 500);
+				await RotateButtonAndMove.TranslateTo(0, 0, 100);
+
+				RotateButtonAndMove.Rotation = 0;
+
+				RotateButtonAndMove.TranslationX = 0;
+			};
+
 		}
 	}
 }

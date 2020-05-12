@@ -12,9 +12,15 @@ namespace XamarinFormsKatas.Katas_UI.Kata_w
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class KataW : ContentPage
 	{
-		public KataW ()
+		public KataW()
 		{
-			InitializeComponent ();
+			InitializeComponent();
+
+
+			NavigationButton.Clicked += (sender, e) =>
+			{
+				Navigation.PushAsync(new Page1(switchEntry, switchLabel, switchButton, switchAi));
+			};
 		}
 	}
 }

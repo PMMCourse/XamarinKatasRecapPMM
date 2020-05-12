@@ -3,10 +3,15 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="XamarinFormsKatas.Katas_UI.Kata_s.KataS">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <Grid>
+            <Grid.RowDefinitions>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+            </Grid.ColumnDefinitions>
+            <BoxView BackgroundColor="AliceBlue" Grid.Row="0" Grid.Column="0"></BoxView>
+            <BoxView BackgroundColor="ForestGreen" Grid.Row="0" Grid.Column="1"></BoxView>
+            <BoxView BackgroundColor="Gold" Grid.Row="1" Grid.Column="0"></BoxView>
+            <BoxView BackgroundColor="Black" Grid.Row="1" Grid.Column="1"></BoxView>
+        </Grid>
     </ContentPage.Content>
 </ContentPage>

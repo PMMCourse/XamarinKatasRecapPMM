@@ -2,11 +2,24 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="XamarinFormsKatas.Katas_UI.Kata_v.KataV">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
-    </ContentPage.Content>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="180"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <ScrollView Grid.Row="0" BackgroundColor="AliceBlue">
+            <StackLayout>
+                <Label Text="Label1"/>
+                <Label Text="Label2"/>
+                <Label Text="Label3"/>
+                <Label Text="Label4"/>
+                <Label Text="Label5"/>
+                <Label Text="Label6"/>
+                <Label Text="Label7"/>
+                <Label Text="Label8"/>
+            </StackLayout>
+        </ScrollView>
+    </Grid>
+
 </ContentPage>

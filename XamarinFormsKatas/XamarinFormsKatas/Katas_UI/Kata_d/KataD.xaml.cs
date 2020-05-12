@@ -12,9 +12,24 @@ namespace XamarinFormsKatas.Katas_UI.Kata_d
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class KataD : ContentPage
 	{
-		public KataD ()
-		{
-			InitializeComponent ();
-		}
-	}
+        public KataD()
+        {
+            InitializeComponent();
+
+            insertOnList();
+        }
+        private void insertOnList()
+        {
+            Person pepe = new Person("Pepe", 20);
+            Person carlos = new Person("Carlos", 23);
+
+
+            List<Person> listOfPersons = new List<Person>();
+            listOfPersons.Add(pepe);
+            listOfPersons.Add(carlos);
+
+
+            list.ItemsSource = listOfPersons;
+        }
+    }
 }

@@ -3,10 +3,11 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="XamarinFormsKatas.Katas_UI.Kata_x.KataX">
     <ContentPage.Content>
+
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Entry x:Name="Entry1" Placeholder="Press to desplegate Picker"/>
+            <Picker x:Name="Picker1" IsVisible="False"/>
         </StackLayout>
+
     </ContentPage.Content>
 </ContentPage>

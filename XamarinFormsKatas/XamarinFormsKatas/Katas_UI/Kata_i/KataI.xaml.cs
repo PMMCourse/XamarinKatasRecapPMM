@@ -12,9 +12,14 @@ namespace XamarinFormsKatas.Katas_UI.Kata_i
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class KataI : ContentPage
 	{
-		public KataI ()
+		public KataI()
 		{
-			InitializeComponent ();
+			InitializeComponent();
 		}
+		private void textPlaceholder(object sender, EventArgs e)
+		{
+			text2.Placeholder = text1.Text;
+		}
+
 	}
 }
