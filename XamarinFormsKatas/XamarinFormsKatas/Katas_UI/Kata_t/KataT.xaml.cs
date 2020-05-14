@@ -17,13 +17,13 @@ namespace XamarinFormsKatas.Katas_UI.Kata_t
 		{
 			InitializeComponent();
 
-			var d1 = new Deportista( 123, 19, "No binario", "Voleyball");
-			var d2 = new Deportista(30, 18 ,"Hombre blanco Cis genero", "Padel");
+			var d1 = new Deportista( 123, 19, "mujer", "Voleyball");
+			var d2 = new Deportista(30, 18 ,"Hombre", "Padel");
 
 			deporList.Add(d1);
 			deporList.Add(d2);
 
-			listview.ItemsSource = deporList;
+			listview.ItemsSource = deporList.Where(x => x.Edad > 23 && x.Deporte.Contains("T") && x.Puntuacion == 30);
 
 		}
 	}
