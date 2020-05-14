@@ -10,11 +10,15 @@ using Xamarin.Forms.Xaml;
 namespace XamarinFormsKatas.Katas_UI.Kata_c
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class KataC : ContentPage
+	public partial class KataC : MasterDetailPage
 	{
+		public static MasterDetailPage MenuOpciones { get; set; }
 		public KataC ()
 		{
 			InitializeComponent ();
+			this.Master = new Master();
+			this.Detail = new NavigationPage(new Detail());
+			MenuOpciones = this;
 		}
 	}
 }

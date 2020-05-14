@@ -7,6 +7,18 @@
             <Label Text="Welcome to Xamarin.Forms!"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
+            <!--
+            <ListView x:Name="ListaTv" ItemsSource="{Binding Lista}" ItemTapped="OnSelectedItem">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextCell Text="{Binding UserId}"/>
+                        <TextCell Text="{Binding Id}"/>
+                        <TextCell Text="{Binding Title}"/>
+                        <TextCell Text="{Binding Body}"/>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            -->
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

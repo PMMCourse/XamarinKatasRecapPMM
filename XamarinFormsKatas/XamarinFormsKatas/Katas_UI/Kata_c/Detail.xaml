@@ -1,11 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="XamarinFormsKatas.Katas_UI.Kata_b.KataB"
-             Title="EjerB UI">
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="XamarinFormsKatas.Katas_UI.Kata_c.Detail">
     <ContentPage.Content>
         <StackLayout>
-            <Button CornerRadius="20" WidthRequest="120" HeightRequest="120" Text="Click" HorizontalOptions="Center" VerticalOptions="Center"/>
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -1,5 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="XamarinFormsKatas.Katas.Kata1.Kata1View">
+             x:Class="XamarinFormsKatas.Katas.Kata1.Kata1View"
+             Title="Main Katas UI">
+    <ScrollView>
+        <StackLayout>
+            <Label Text="Relación de Ejercicios KATAS"
+                HorizontalOptions="CenterAndExpand" />
+            <Button Text="Ejer Kata UI B" x:Name="botonUIb" Clicked="BotonUIb_Clicked"/>
+            <Button Text="Ejer Kata UI C" x:Name="botonUIc" Clicked="BotonUIc_Clicked"/>
+            <Button Text="Ejer Kata UI D" x:Name="botonUId" Clicked="BotonUId_Clicked"/>
+            <Button Text="Ejer Kata UI E" x:Name="botonUIe" Clicked="BotonUId_Clicked"/>
+        </StackLayout>
+    </ScrollView>
 </ContentPage>
