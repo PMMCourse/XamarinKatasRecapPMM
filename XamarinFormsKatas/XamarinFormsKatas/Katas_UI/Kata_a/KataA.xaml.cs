@@ -49,6 +49,17 @@ namespace XamarinFormsKatas.Katas_UI.Kata_a
 			btnX.Clicked += (sender, e) => Navigation.PushAsync(new Katas_UI.Kata_x.KataX());
 			btnY.Clicked += (sender, e) => Navigation.PushAsync(new Katas_UI.Kata_y.KataY());
 			btnZ.Clicked += (sender, e) => Navigation.PushAsync(new Katas_UI.Kata_z.KataZ());
+			btnLA.Clicked += (sender, e) => Navigation.PushAsync(new Katas_Logic.Kata_LA.KataLA());
+			btnLB.Clicked += (sender, e) => Navigation.PushAsync(new Katas_Logic.Kata_LB.KataLB());
+			btnLC.Clicked += (sender, e) => Navigation.PushAsync(new Katas_Logic.Kata_LC.KataLC());
+			btnLD.Clicked += (sender, e) => Navigation.PushAsync(new Katas_Logic.Kata_LD.KataLD());
+			btnLE.Clicked += (sender, e) => Navigation.PushAsync(new Katas_Logic.Kata_LE.KataLE());
+			btnLF.Clicked += (sender, e) => Navigation.PushAsync(new Katas_Logic.Kata_LF.KataLF());
+			btnLG.Clicked += (sender, e) => Navigation.PushAsync(new Katas_Logic.Kata_LG.KataLG());
+			btnLH.Clicked += (sender, e) => Navigation.PushAsync(new Katas_Logic.Kata_LH.KataLH());
+			btnLI.Clicked += (sender, e) => Navigation.PushAsync(new Katas_Logic.Kata_LI.Kata_LI());
+			btnLJ.Clicked += (sender, e) => Navigation.PushAsync(new Katas_Logic.Kata_LJ.Kata_LJ());
+			btnLK.Clicked += (sender, e) => Navigation.PushAsync(new Katas_Logic.Kata_LK.KataLK());
 		}
 	}
 }
