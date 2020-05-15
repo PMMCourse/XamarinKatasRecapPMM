@@ -15,6 +15,12 @@ namespace XamarinFormsKatas.Katas_Logic.Kata_LE
 		public KataLE ()
 		{
 			InitializeComponent ();
+			BindingContext = new KataLeViewModel();
+		}
+
+		private void ColorTextChanged(object sender, TextChangedEventArgs e)
+		{
+			(BindingContext as KataLeViewModel).BlendColorsCommand.Execute(null);
 		}
 	}
 }
