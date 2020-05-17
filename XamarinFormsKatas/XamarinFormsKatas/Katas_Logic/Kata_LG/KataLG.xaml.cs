@@ -12,9 +12,10 @@ namespace XamarinFormsKatas.Katas_Logic.Kata_LG
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class KataLG : ContentPage
 	{
-		public KataLG ()
+		public KataLG (Entry EControl, Label LControl, Button BControl, ActivityIndicator AControl)
 		{
 			InitializeComponent ();
+			BindingContext = new MainViewModel();
 		}
 	}
 }

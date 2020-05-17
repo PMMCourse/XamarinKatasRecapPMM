@@ -17,6 +17,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Update="Katas_Logic\Kata_LG\ElementControl.xaml.cs">
+      <DependentUpon>ElementControl.xaml</DependentUpon>
+    </Compile>
     <Compile Update="Katas_UI\Kata_w\ElementControl.xaml.cs">
       <DependentUpon>ElementControl.xaml</DependentUpon>
     </Compile>
@@ -45,6 +48,9 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Katas_Logic\Kata_LG\KataLG.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Katas_Logic\Kata_LG\ElementControl.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Katas_Logic\Kata_LH\KataLH.xaml">
