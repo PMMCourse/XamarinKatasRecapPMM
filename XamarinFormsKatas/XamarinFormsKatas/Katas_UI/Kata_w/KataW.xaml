@@ -1,12 +1,36 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="XamarinFormsKatas.Katas_UI.Kata_w.KataW">
+             x:Class="XamarinFormsKatas.Katas_UI.Kata_w.KataW"
+             Title="EjerW UI">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <Switch x:Name="sw1" IsToggled="false" Grid.Column="0" Grid.Row="0" Toggled="swToggled"/>
+            <Entry x:Name="elemento1" Grid.Column="1" Grid.Row="0" Placeholder="Entry" IsEnabled="False"/>
+
+            <Switch x:Name="sw2" IsToggled="false" Grid.Column="0" Grid.Row="1" Toggled="swToggled"/>
+            <Label x:Name="elemento2" Text="Label" Grid.Column="1" Grid.Row="1" />
+
+            <Switch x:Name="sw3" IsToggled="false" Grid.Column="0" Grid.Row="2" Toggled="swToggled"/>
+            <Button x:Name="elemento3" Text="Botón" IsEnabled="False" Grid.Column="1" Grid.Row="2" />
+
+            <Switch x:Name="sw4" IsToggled="false" Grid.Column="0" Grid.Row="3" Toggled="swToggled"/>
+            <ActivityIndicator x:Name="elemento4" IsRunning="False" Grid.Column="1" Grid.Row="3" />
+
+            <Button x:Name="btnW" Text="Continuar" Clicked="btnW_Clicked" Grid.Row="4" Grid.ColumnSpan="2"/>
+        </Grid>
     </ContentPage.Content>
 </ContentPage>

@@ -22,6 +22,7 @@ namespace XamarinFormsKatas.UWP
             this.InitializeComponent();
 
             LoadApplication(new XamarinFormsKatas.App());
+            Xamarin.FormsMaps.Init("AIzaSyDhHbbINhho4uvF8kMUU817dp8K05w7aMs");
         }
     }
 }

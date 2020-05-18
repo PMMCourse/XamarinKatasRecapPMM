@@ -1,5 +1,39 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="XamarinFormsKatas.Katas.Kata1.Kata1View">
+             x:Class="XamarinFormsKatas.Katas.Kata1.Kata1View"
+             Title="Main Katas UI">
+    <ScrollView>
+        <StackLayout>
+            <Label Text="Relación de Ejercicios KATAS"
+                HorizontalOptions="CenterAndExpand" />
+            <Button Text="Ejer Kata UI B" Clicked="BotonUIb_Clicked"/>
+            <Button Text="Ejer Kata UI C" Clicked="BotonUIc_Clicked"/>
+            <Button Text="Ejer Kata UI D" Clicked="BotonUId_Clicked"/>
+            <Button Text="Ejer Kata UI E" Clicked="BotonUIe_Clicked"/>
+            <Button Text="Ejer Kata UI F" Clicked="BotonUIf_Clicked"/>
+            <Button Text="Ejer Kata UI G" Clicked="BotonUIg_Clicked"/>
+            <Button Text="Ejer Kata UI H" Clicked="BotonUIh_Clicked"/>
+            <Button Text="Ejer Kata UI I" Clicked="BotonUIi_Clicked"/>
+            <Button Text="Ejer Kata UI J" Clicked="BotonUIj_Clicked"/>
+            <Button Text="Ejer Kata UI K" Clicked="BotonUIk_Clicked"/>
+            <Button Text="Ejer Kata UI L" Clicked="BotonUIl_Clicked"/>
+            <Button Text="Ejer Kata UI M" Clicked="BotonUIm_Clicked"/>
+            <Button Text="Ejer Kata UI N" Clicked="BotonUIn_Clicked"/>
+            <Button Text="Ejer Kata UI O" Clicked="BotonUIo_Clicked"/>
+            <Button Text="Ejer Kata UI P" Clicked="BotonUIp_Clicked"/>
+            <Button Text="Ejer Kata UI Q" Clicked="BotonUIq_Clicked"/>
+            <Button Text="Ejer Kata UI R" Clicked="BotonUIr_Clicked"/>
+            <Button Text="Ejer Kata UI S" Clicked="BotonUIs_Clicked"/>
+            <Button Text="Ejer Kata UI T" Clicked="BotonUIt_Clicked"/>
+            <Button Text="Ejer Kata UI U" Clicked="BotonUIu_Clicked"/>
+            <Button Text="Ejer Kata UI U1" Clicked="BotonUIu1_Clicked"/>
+            <Button Text="Ejer Kata UI V" Clicked="BotonUIv_Clicked"/>
+            <Button Text="Ejer Kata UI W" Clicked="BotonUIw_Clicked"/>
+            <Button Text="Ejer Kata UI X" Clicked="BotonUIx_Clicked"/>
+            <Button Text="Ejer Kata UI Y" Clicked="BotonUIy_Clicked"/>
+            <Button Text="Ejer Kata UI Z" Clicked="BotonUIz_Clicked"/>
+
+        </StackLayout>
+    </ScrollView>
 </ContentPage>

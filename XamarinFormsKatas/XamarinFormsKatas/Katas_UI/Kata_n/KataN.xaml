@@ -1,12 +1,24 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="XamarinFormsKatas.Katas_UI.Kata_n.KataN">
-    <ContentPage.Content>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:pages="clr-namespace:XamarinFormsKatas.Katas_UI.Kata_n"
+             x:Class="XamarinFormsKatas.Katas_UI.Kata_n.KataN"
+             Title="EjerN UI">
+    <ContentPage Title="Tab 1">
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Label Text="Texto Tab 1"/>
+            <Button Text="Abrir contenido Tab 1" Clicked="Btn_AbrirTab1" WidthRequest="200" HeightRequest="80"/>
         </StackLayout>
-    </ContentPage.Content>
-</ContentPage>
+    </ContentPage>
+    <ContentPage Title="Tab 2">
+        <StackLayout>
+            <Label Text="Texto Tab 2"/>
+            <Button Text="Abrir contenido Tab 2" Clicked="Btn_AbrirTab2" WidthRequest="200" HeightRequest="80"/>
+        </StackLayout>
+    </ContentPage>
+    <ContentPage Title="Tab 3">
+        <StackLayout>
+            <Label Text="Texto Tab 3"/>
+            <Button Text="Abrir contenido Tab 3" Clicked="Btn_AbrirTab3" WidthRequest="200" HeightRequest="80"/>
+        </StackLayout>
+    </ContentPage>
+</TabbedPage>

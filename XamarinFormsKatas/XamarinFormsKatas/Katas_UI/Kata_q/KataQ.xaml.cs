@@ -16,5 +16,7 @@ namespace XamarinFormsKatas.Katas_UI.Kata_q
 		{
 			InitializeComponent ();
 		}
-	}
+
+    }
+
 }

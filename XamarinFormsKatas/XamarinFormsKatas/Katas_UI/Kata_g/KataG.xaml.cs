@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 using Xamarin.Forms;
+using Xamarin.Forms.Markup;
 using Xamarin.Forms.Xaml;
 
 namespace XamarinFormsKatas.Katas_UI.Kata_g
@@ -15,6 +16,11 @@ namespace XamarinFormsKatas.Katas_UI.Kata_g
 		public KataG ()
 		{
 			InitializeComponent ();
+		}
+
+		private async void BtnRotarG(object sender, EventArgs args)
+		{
+			await botonRotaG.RelRotateTo(360, 1000);
 		}
 	}
 }

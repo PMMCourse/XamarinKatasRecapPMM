@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             x:Class="XamarinFormsKatas.Katas_UI.Kata_c.Master"
+             Title="Menú Opciones">
+         <!--    mc:Ignorable="d" -->
+
+    <StackLayout Orientation="Vertical">
+        <Button Text="Elemento 1" x:Name="btnElemento1" Clicked="BtnElemento1_Clicked"/>
+        <Button Text="Elemento 2" x:Name="btnElemento2" Clicked="BtnElemento2_Clicked"/>
+        <Button Text="Elemento 3" x:Name="btnElemento3" Clicked="BtnElemento3_Clicked"/>
+    </StackLayout>
+</ContentPage>

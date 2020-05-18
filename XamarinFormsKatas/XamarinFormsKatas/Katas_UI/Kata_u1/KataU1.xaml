@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:Maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"
+             x:Class="XamarinFormsKatas.Katas_UI.Kata_u1.KataU1"
+             Title="EjerU1 UI">
+    <StackLayout VerticalOptions="StartAndExpand" Padding="12">
+        <Maps:Map WidthRequest="400" HeightRequest="500" x:Name="MyMap" MapType="Street"/>
+    </StackLayout>
+</ContentPage>
