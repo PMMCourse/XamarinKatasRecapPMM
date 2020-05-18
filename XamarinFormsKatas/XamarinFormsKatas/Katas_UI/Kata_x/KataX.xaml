@@ -1,12 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="XamarinFormsKatas.Katas_UI.Kata_x.KataX">
+             x:Class="XamarinFormsKatas.Katas_UI.Kata_x.KataX"
+            Title="EjerX UI">
+
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Label x:Name="labelX" Text="Texto" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="Tap"/>
+                </Label.GestureRecognizers>
+            </Label>
+            <Picker x:Name="pickerX" Title="Titulo" IsVisible="False" SelectedIndexChanged="pickerX_SelectedIndexChanged"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

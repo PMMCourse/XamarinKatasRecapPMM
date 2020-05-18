@@ -1,34 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="XamarinFormsKatas.Katas_UI.Kata_e.KataE">
+             x:Class="XamarinFormsKatas.Katas_UI.Kata_e.KataE"
+             Title="EjerE UI">
     <ContentPage.Content>
         <StackLayout>
-            <ListView ItemsSource="{Binding Personas}" HasUnevenRows="true">
+            <ListView ItemsSource="{Binding PersonasE}" ItemTapped="OnSelectedItem" Header="Personas" SeparatorColor="Gray">
+                
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
                             <Grid Padding="10">
-                                <Grid.RowDefinitions>
-                                    <RowDefinition Height="Auto" />
-                                    <RowDefinition Height="*" />
-                                </Grid.RowDefinitions>
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition Width="Auto" />
-                                    <ColumnDefinition Width="*" />
                                 </Grid.ColumnDefinitions>
-                                <Image Grid.RowSpan="2"
-                           Source="{Binding FotoUrl}"
-                           Aspect="AspectFill"
-                           HeightRequest="60"
-                           WidthRequest="60" />
-                                <Label Grid.Column="1"
-                           Text="{Binding Nombre}"
-                           FontAttributes="Bold" />
-                                <Label Grid.Row="1"
-                           Grid.Column="1"
-                           Text="{Binding Edad}"
-                           VerticalOptions="End" />
+                                <Label Grid.Column="0" Text="{Binding Nombre}" FontAttributes="Bold" />
                             </Grid>
                         </ViewCell>
                     </DataTemplate>

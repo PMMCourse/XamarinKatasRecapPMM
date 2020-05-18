@@ -5,7 +5,7 @@
              Title="EjerD UI">
     <ContentPage.Content>
         <StackLayout>
-            <ListView ItemsSource="{Binding Personas}" HasUnevenRows="true">
+            <ListView ItemsSource="{Binding Personas}" Header="Personas" SeparatorColor="Gray">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>

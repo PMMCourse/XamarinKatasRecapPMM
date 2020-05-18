@@ -16,5 +16,14 @@ namespace XamarinFormsKatas.Katas_UI.Kata_o
 		{
 			InitializeComponent ();
 		}
-	}
+        protected override bool OnBackButtonPressed()
+        {
+            Device.BeginInvokeOnMainThread(async () => {
+                var result = await this.DisplayAlert("Atención!", "¿Esta seguro de querer salir?", "Si", "No");
+                if (result) await this.Navigation.PopAsync();
+            });
+
+            return true;
+        }
+    }
 }

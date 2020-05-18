@@ -22,14 +22,12 @@ namespace XamarinFormsKatas.Katas_UI.Kata_e
 			set { nombre = value; }
 		}
 
-		private String fotourl;
-
+		private String _fotoUrl;
 		public String FotoUrl
 		{
-			get { return fotourl; }
-			set { fotourl = value; }
+			get { return _fotoUrl; }
+			set { _fotoUrl = value; }
 		}
-
 
 	}
 }

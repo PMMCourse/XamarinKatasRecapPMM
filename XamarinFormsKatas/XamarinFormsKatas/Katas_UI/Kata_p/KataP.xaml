@@ -1,12 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="XamarinFormsKatas.Katas_UI.Kata_p.KataP">
+             x:Class="XamarinFormsKatas.Katas_UI.Kata_p.KataP"
+             Title="EjerP UI"
+             x:Name="EjerPUI">
+
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Button Text="Click" x:Name="Btn_Indicador" Clicked="BtnIndicadorClicked" WidthRequest="200" HeightRequest="80"/>
+            <ActivityIndicator x:Name="Indicador" IsRunning="false" IsEnabled="False" IsVisible="False" Color="Orange" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

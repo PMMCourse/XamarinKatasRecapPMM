@@ -6,6 +6,6 @@ namespace XamarinFormsKatas.Katas_UI.Kata_e
 {
     public class ListaPersonaE
     {
-        public List<PersonaModelE> Personas = new List<PersonaModelE>();
+        public List<PersonaModelE> PersonasE = new List<PersonaModelE>();
     }
 }

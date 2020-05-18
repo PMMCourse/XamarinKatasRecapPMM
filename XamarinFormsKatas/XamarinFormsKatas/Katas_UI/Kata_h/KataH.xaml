@@ -1,12 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="XamarinFormsKatas.Katas_UI.Kata_h.KataH">
+             x:Class="XamarinFormsKatas.Katas_UI.Kata_h.KataH"
+             Title="EjerH UI">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Button x:Name="botonEjerH" Text="Click para Animar" CornerRadius="10" WidthRequest="200" HeightRequest="100"
+                HorizontalOptions="Center"
+                Clicked="BtnAnimarH" Margin="0,200,0,0"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -16,5 +16,40 @@ namespace XamarinFormsKatas.Katas_UI.Kata_j
 		{
 			InitializeComponent ();
 		}
+
+		private async void btnLogin(object sender, EventArgs e)
+		{
+			var error_login = false;
+			var message = "";
+			var coloractual = username.BackgroundColor;
+			if (string.IsNullOrEmpty(username.Text))
+			{
+				message += "Debe introducir un nombre de usuario\n";
+				username.BackgroundColor = Color.Red;
+				error_login = true;
+			}
+
+			if (string.IsNullOrEmpty(password.Text))
+			{
+				message += "Debe introducir la password";
+				password.BackgroundColor = Color.Red;
+				error_login = true;
+			}
+
+			if (error_login == true)
+			{
+				lblError.Text = message;
+				await Task.Delay(3000);
+				username.BackgroundColor = coloractual;
+				password.BackgroundColor = coloractual;
+				lblError.Text = "";
+			}
+			else
+			{
+				username.BackgroundColor = coloractual;
+				password.BackgroundColor = coloractual;
+				lblError.Text = "Datos introducidos correctamente. Necesario verificar acceso.";
+			}
+		}
 	}
 }

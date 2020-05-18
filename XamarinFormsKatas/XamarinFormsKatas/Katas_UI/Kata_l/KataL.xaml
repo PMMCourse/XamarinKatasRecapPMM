@@ -1,12 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="XamarinFormsKatas.Katas_UI.Kata_l.KataL">
+             x:Class="XamarinFormsKatas.Katas_UI.Kata_l.KataL"
+             Title="EjerL UI">
+
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
+            <Label x:Name="LabelEjerL" Text="Haz algo"
                 VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+                HorizontalOptions="CenterAndExpand">
+                <Label.GestureRecognizers>
+                    <SwipeGestureRecognizer Direction="Left" Swiped="SwipeIzq"/>
+                    <SwipeGestureRecognizer Direction="Right" Swiped="SwipeDer"/>
+                    <TapGestureRecognizer Tapped="Tap"/>
+                    <PinchGestureRecognizer PinchUpdated="Pinch" />
+                </Label.GestureRecognizers>
+            </Label>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

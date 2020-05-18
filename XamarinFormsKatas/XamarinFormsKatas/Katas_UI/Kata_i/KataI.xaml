@@ -1,12 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="XamarinFormsKatas.Katas_UI.Kata_i.KataI">
+             x:Class="XamarinFormsKatas.Katas_UI.Kata_i.KataI"
+             Title="EjerI UI">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Label Text="Entry 1"/>
+            <Entry x:Name="entry1" Placeholder="Escribe Algo" TextChanged="entry1_TextChanged"/>
+            <Label Text="Entry 2"/>
+            <Entry x:Name="entry2"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
