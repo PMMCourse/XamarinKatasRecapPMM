@@ -3,10 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="XamarinFormsKatas.Katas_UI.Kata_v.KataV">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <ScrollView Orientation="Horizontal">
+            <Label Text=" estoy intentando escribir mucho pero nose que escribir realmente asi que escribo sin pensar mucho porque si me lo pensara seguramente no seria capaz de escribir nada, asi que escribo cosas que se me pasan por la cabeza como por ejemplo una sirena invertida es raro pero gracioso"/>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

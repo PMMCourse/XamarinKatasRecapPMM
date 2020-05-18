@@ -16,5 +16,10 @@ namespace XamarinFormsKatas.Katas_UI.Kata_i
 		{
 			InitializeComponent ();
 		}
+
+		private void entryText_TextChanged(object sender, TextChangedEventArgs e)
+		{
+			entryPlace.Text = entryText.Text;
+		}
 	}
 }

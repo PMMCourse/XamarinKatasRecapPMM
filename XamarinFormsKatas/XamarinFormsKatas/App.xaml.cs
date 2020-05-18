@@ -1,17 +1,20 @@
 ﻿using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using XamarinFormsKatas.Katas_UI.Kata_c;
 
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace XamarinFormsKatas
 {
     public partial class App : Application
     {
+        public static KataC MasterDetail { get; internal set; }
+
         public App()
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new NavigationPage(new Katas_UI.Kata_a.KataA());
         }
 
         protected override void OnStart()
